@@ -5,20 +5,32 @@ Instructions for setting up SSH tunneling on a DigitalOcean droplet.
 ## Creating the droplet on DigitalOcean
 
 1. Click `Create Droplet`
-2. Name it 'tunnel'
-2. Select $5/mo
-3. Select Singapore
-4. Select Ubuntu 16.04
-5. Add your SSH key (probably already there if you've created other droplets)
+1. Select Ubuntu 16.04 x64
+1. Select $5/mo
+1. Select Singapore
+1. Add your SSH key (or check the appropriate key you've already added your key to your DigitalOcean account)
+1. Give it a hostname of 'tunnel' (or whatever you prefer)
 
 ## Adding your user
+
+Once your droplet has been created, use its given IP address to SSH into it.
+
+```bash
+ssh root@<ip_address>
+```
+
+Add a new user:
 
 ```bash
 adduser username
 visudo
 ```
 
+Give it all the necessary permissions:
+
 Add this line: `username ALL=(ALL:ALL) ALL`
+
+Add your key:
 
 ```bash
 cd /home/username
@@ -29,7 +41,7 @@ chmod 600 authorized_keys
 chown username:username authorized_keys
 ```
 
-Remember that you can always reset your root password in the control panel.
+Remember that you reset your root password in the Access section of the control panel for the droplet.
 
 ## License
 
