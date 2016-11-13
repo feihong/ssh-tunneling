@@ -1,4 +1,4 @@
-# ssh-tunneling
+# SSH Tunneling HOWTO
 
 Instructions for setting up SSH tunneling on a DigitalOcean droplet.
 
