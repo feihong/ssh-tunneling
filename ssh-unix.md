@@ -1,12 +1,12 @@
 # SSH tunneling on Unix
 
-Run this command to start the tunnel:
+Assuming you've already set up your proxy server, run this command to start the tunnel:
 
 ```
 ssh -N -C -D <port> <ip_address>
 ```
 
-The `-N` option means no interactive shell. The `-C` turns on compression.
+The `-N` option means no interactive shell. The `-C` turns on compression. The `-D` specifies the port.
 
 ## SSH tunnel script
 
