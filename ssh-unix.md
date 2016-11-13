@@ -1,6 +1,6 @@
-# Use ssh command to create tunnel
+# SSH tunneling on Unix
 
-Source: http://pixelsvsbytes.com/blog/2011/09/easy-ssh-tunnelling-for-the-mac/
+Run this command to start the tunnel:
 
 ```
 ssh -N -C -D <port> <ip_address>
@@ -38,3 +38,7 @@ Now see what IP address you get when you tunnel through the proxy.
 ```
 curl -s --proxy socks5://127.0.0.1:<port> http://ipecho.net/plain
 ```
+
+## References
+ 
+[Easy SSH tunnelling for the Mac](http://pixelsvsbytes.com/blog/2011/09/easy-ssh-tunnelling-for-the-mac/)
