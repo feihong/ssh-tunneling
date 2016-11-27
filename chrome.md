@@ -6,7 +6,9 @@
 
 ## Notes
 
-I have not been able to get this working on my own system, nor am I able to even create a symbolic link to the chrome binary.
+The command line options only take effect if you run the command while there is no Chrome process already open. If Chrome is already open, then running the command only opens a new window for the current process, which will not use the proxy settings you specified on the command line.
+
+For some reason, I'm unable to create a symbolic link for running Chrome on Mac OS X.
 
 ## Sources
 
