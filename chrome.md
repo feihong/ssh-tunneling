@@ -1,5 +1,7 @@
 # Use Proxy through Chrome
 
+By default, Chrome will just use the system proxy settings. However, you can also override those proxy settings by running Chrome from the command line:
+
 ```
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --proxy-server="socks5://localhost:15600" --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost"
 ```
