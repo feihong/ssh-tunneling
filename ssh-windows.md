@@ -20,10 +20,11 @@ Note that the private key file needs to be a .ppk file accepted by PuTTY. If you
 
 ## Testing
 
-The `curl` command is not available by default on Windows 10. You can instead use `Invoke-RestMethod` in PowerShell.
+The `curl` command can be installed by running `choco install curl`.
 
 ```
-Invoke-RestMethod -Uri http://ipecho.net/plain
+curl.exe http://ipecho.net/plain
+curl.exe -s --proxy socks5://127.0.0.1:15600 http://ipecho.net/plain
 ```
 
 ## Source
