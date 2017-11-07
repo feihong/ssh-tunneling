@@ -9,10 +9,12 @@ Instructions for setting up SSH tunneling on a DigitalOcean droplet.
 1. Select $5/mo
 1. Select Singapore
 1. Give it a hostname of 'tunnel' (or whatever you prefer)
+1. Click on the droplet you created
+1. Go to Access > Reset root password
 
 ## Adding your user
 
-After your droplet has been created, you will receive an email informing you of its IP address and root password. SSH into your droplet:
+You will receive an email informing you of its IP address and root password. SSH into your droplet:
 
 ```bash
 ssh root@<ip_address>
